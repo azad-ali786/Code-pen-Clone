@@ -16,6 +16,14 @@ body{
   flex-direction:column;
   padding:.5rem;
   background-color: hsl(225,6%,25%);
+  transition: all .25s ease-in-out;
+}
+.collapsed{
+  flex-grow:0;
+}
+.collapsed .CodeMirror-scroll{
+  position: absolute;
+  overflow: hidden !important;
 }
 .editor-title{
   display:flex;
@@ -34,4 +42,11 @@ body{
   border-bottom-right-radius: .5rem;
   border-bottom-left-radius: .5rem;
   overflow: hidden;
+}
+.expand-collapse-btn{
+  margin: left 0.5rem;
+  background:none;
+ border:none !important;
+ color:white ;
+ cursor: pointer;
 }
